@@ -1,31 +1,30 @@
-
 {
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+    "env": {
+        "browser": true,
+        "es2021": true
     },
-    "ecmaVersion": 2019,
-    "sourceType": "module"
-  },
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "plugins": [
-    "import",
-    "jsx-a11y",
-    "react",
-    "react-hooks",
-    "prettier"
-  ],
-  "extends": [
-    "prettier"
-  ],
-  "rules": {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+      "import",
+      "jsx-a11y",
+      "react",
+      "react-hooks",
+      "prettier"
+    ],
+    "extends": [
+      "plugin:react/recommended",
+      "airbnb",
+      "eslint-config-prettier",
+      "prettier/react"
+    ],
+    "rules": {
     "react/no-danger": "off",
     "no-shadow": "off",
     "no-irregular-whitespace": "off",
@@ -75,7 +74,8 @@
         "@typescript-eslint/eslint-plugin"
       ],
       "extends": [
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "eslint-config-prettier/@typescript-eslint"
       ],
       "rules": {
         "@typescript-eslint/explicit-function-return-type": "off",
