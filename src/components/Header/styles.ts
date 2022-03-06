@@ -9,7 +9,7 @@ export const Content = styled.div`
 
     padding: 2rem 1rem 12rem;
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: space-between;
 
         button {
@@ -27,5 +27,5 @@ export const Content = styled.div`
         }
 
     }
-    
+
 `
