@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html {
         @media(max-width: 1080px) {
-            font-size: 93.75%; 
+            font-size: 93.75%;
         }
 
         @media (max-width: 720px) {
@@ -53,4 +53,4 @@ export const GlobalStyle = createGlobalStyle`
         opacity: 0.6;
         cursor: not-allowed;
     }
-`
+`;

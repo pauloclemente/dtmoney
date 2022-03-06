@@ -20,7 +20,10 @@ export function Header() {
     <Container>
       <Content>
         <img src={logoImg} alt="dt money" />
-        <button type="button">Nova transação</button>
+        <button type="button" onClick={handleOpenNewTransactionModal}>
+          Nova transação
+        </button>
+
         <Modal isOpen={isNewTransactionModalOpen}>
           <h2>Cadastrar transação</h2>
         </Modal>
