@@ -38,6 +38,7 @@
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     "jsx-a11y/label-has-associated-control": "off",
+    "react/jsx-no-bind": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
